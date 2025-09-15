@@ -1,0 +1,30 @@
+.wrapper {
+    margin-bottom: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem; color: #bcc7d9;
+    margin-bottom: .35rem;
+    letter-spacing: 1px;
+}
+
+.track {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 999px;
+    background: #2a3140;
+    overflow: hidden;
+}
+
+.fill {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 0;
+    background: linear-gradient(90deg,#2d6cf0,#6da8ff);
+    transition: width .4s ease;
+    border-radius: inherit;
+}
+

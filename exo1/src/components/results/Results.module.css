@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+
+
+    li {
+        margin-bottom: 1em;
+        border-radius: 8px;
+        padding: 1em;
+
+
+        div > span {
+            color: green;
+        }
+    }
+}
