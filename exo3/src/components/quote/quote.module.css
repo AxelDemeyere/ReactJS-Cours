@@ -1,0 +1,30 @@
+.quote-card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06);
+  padding: 24px 20px;
+  margin-bottom: 16px;
+
+    .quote {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0 0 10px;
+    }
+
+    .author {
+        display: inline-block;
+        color: var(--muted);
+        font-size: 0.95rem;
+    }
+
+    .actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
+}
