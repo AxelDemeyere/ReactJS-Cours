@@ -1,12 +1,67 @@
-# React + Vite
+# 📖 Citations Aléatoires - Exercice React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application React simple qui affiche des citations aléatoires avec possibilité de copie.
 
-Currently, two official plugins are available:
+## 🚀 Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Captures 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App Screenshot](./capture/screenshot.png)
+
+## ✨ Fonctionnalités
+
+- Affichage de citations aléatoires (API DummyJSON)  
+- Génération de nouvelles citations via bouton
+- Copie dans le presse-papiers avec feedback visuel
+- Hook personnalisé `useCopy` pour la gestion du clipboard
+- Interface responsive avec thème clair épuré
+
+## 🛠️ Technologies
+
+- React 18 + Vite
+- Axios pour les appels API
+- CSS Modules pour les styles
+- Hook personnalisé (useCopy)
+- API DummyJSON : https://dummyjson.com/quotes/random
+
+## 📁 Structure du projet
+
+```
+src/
+├── components/
+│   ├── quote/          # Composant d'affichage des citations
+│   │   ├── Quote.jsx
+│   │   └── quote.module.css
+│   ├── randomButton/   # Bouton pour nouvelle citation
+│   │   ├── RandomButton.jsx
+│   │   └── randomButton.module.css
+│   └── copy/          # Bouton de copie
+│       ├── Copy.jsx
+│       └── copy.module.css
+├── hooks/
+│   ├── useCopy.js     # Hook personnalisé pour clipboard
+├── service/
+│   └── fetchQuote.js  # Service API pour récupérer citations
+├── Home.jsx           # Composant principal
+├── index.css          # Styles globaux et variables CSS
+└── main.jsx           # Point d'entrée
+```
+
+## 🎯 Hooks personnalisés
+
+### `useCopy`
+```javascript
+const { copy, copied } = useCopy();
+```
+Gère la copie dans le presse-papiers avec feedback visuel "Copié !".
+
+## 🎨 Fonctionnement
+
+1. **Chargement initial** : Une citation s'affiche automatiquement
+2. **Nouvelle citation** : Cliquez sur "Nouvelle citation" 
+3. **Copie** : Cliquez sur "Copier" pour mettre la citation dans le clipboard
