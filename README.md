@@ -62,7 +62,7 @@ npm run dev
 
 ## ✨ Aperçu visuel
 
-![App Screenshot](./capture/screenshot.png)
+![App Screenshot](./exo3/capture/screenshot.png)
 
 ---
 
@@ -71,6 +71,7 @@ npm run dev
 * *Exercice 1 : ...*
 * *Exercice 2 : ...*
 * *Exercice 3 : Générateur de citations aléatoires ✅*
+
 
 
 
