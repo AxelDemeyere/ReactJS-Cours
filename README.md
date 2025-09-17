@@ -6,6 +6,32 @@ Ce repository regroupe les exercices réalisés dans le cadre de l’apprentissa
 
 ---
 
+## 🚀 Exercice 1 – Quiz Interactif
+
+### 🎯 Objectif
+
+Un quiz interactif développé avec **React + Vite**, permettant :
+
+* d’afficher des questions à choix multiples,
+* de sélectionner une réponse,
+* de calculer un score,
+* de voir le résultat final avec un récapitulatif.
+
+### 🛠️ Concepts abordés
+
+* **Gestion du state** avec `useState` (questions, réponse sélectionnée, score).
+* **Composition de composants** et passage de `props`.
+* **Rendu conditionnel** (affichage de la question, de l’écran de résultat, du récapitulatif).
+* **Itération et rendu de listes** (`Array.map`) avec gestion correcte des `key`.
+
+### ✨ Aperçu visuel
+
+![App Screenshot](./exo1/captures/screenshot1.png)
+![App Screenshot](./exo1/captures/screenshot2.png)
+
+
+---
+
 ## 🚀 Exercice 2 – Galerie d’Images avec Filtres
 
 ### 🎯 Objectif
@@ -95,3 +121,4 @@ npm run dev
 ---
 
 Veux-tu que j’ajoute aussi une **section "Aperçu visuel"** avec une capture d’écran pour l’exercice 4 (même format que pour l’exo 3) ?
+
