@@ -6,6 +6,27 @@ Ce repository regroupe les exercices réalisés dans le cadre de l’apprentissa
 
 ---
 
+## 🚀 Exercice 2 – Galerie d’Images avec Filtres
+
+### 🎯 Objectif
+
+Développer une application **React** qui affiche une **galerie d’images** avec des filtres de catégories.
+
+### 🛠️ Concepts abordés
+
+* Simulation d’un **chargement asynchrone**.
+* Gestion d’un **état de filtre** (catégorie sélectionnée).
+* Affichage d’**états conditionnels** :
+
+  * chargement,
+  * erreur,
+  * aucun résultat.
+ 
+### ✨ Aperçu visuel
+
+![App Screenshot](./exo2/captures/screenshot.png)
+
+
 ## 🚀 Exercice 3 – Générateur de citations aléatoires
 
 ### 🎯 Objectif
@@ -25,6 +46,10 @@ Développer une petite application **React** qui permet :
 ### 🌍 API utilisée
 
 * **Citation aléatoire :** [https://dummyjson.com/quotes/random](https://dummyjson.com/quotes/random)
+
+### ✨ Aperçu visuel
+
+![App Screenshot](./exo3/capture/screenshot.png)
 
 ---
 
@@ -60,18 +85,13 @@ npm run dev
 
 ---
 
-## ✨ Aperçu visuel
-
-![App Screenshot](./exo3/capture/screenshot.png)
-
----
-
 ## 📚 Autres exercices
 
 * *Exercice 1 : ...*
-* *Exercice 2 : ...*
+* *Exercice 2 : Galerie d’Images avec Filtres ✅*
 * *Exercice 3 : Générateur de citations aléatoires ✅*
 
 
+---
 
-
+Veux-tu que j’ajoute aussi une **section "Aperçu visuel"** avec une capture d’écran pour l’exercice 4 (même format que pour l’exo 3) ?
