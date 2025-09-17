@@ -85,7 +85,7 @@ Développer une petite application **React** qui permet :
 
 ```bash
 git clone https://github.com/AxelDemeyere/ReactJS-Cours.git
-cd exo3
+cd exo1
 ```
 
 ### 2️⃣ Installer les dépendances
@@ -113,7 +113,7 @@ npm run dev
 
 ## 📚 Autres exercices
 
-* *Exercice 1 : ...*
+* *Exercice 1 : Quiz Interactif ✅*
 * *Exercice 2 : Galerie d’Images avec Filtres ✅*
 * *Exercice 3 : Générateur de citations aléatoires ✅*
 
@@ -121,4 +121,5 @@ npm run dev
 ---
 
 Veux-tu que j’ajoute aussi une **section "Aperçu visuel"** avec une capture d’écran pour l’exercice 4 (même format que pour l’exo 3) ?
+
 
