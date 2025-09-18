@@ -79,6 +79,22 @@ Développer une petite application **React** qui permet :
 
 ---
 
+## 🚀 Exercice 4 – Gestionnaire de dépenses
+
+### 🎯 Objectif
+
+Développer une application React permettant de gérer ses dépenses
+
+### 🛠️ Concepts abordés
+
+* Utilisation d'un store via l'utilisation de **Redux**
+* Récupération des données d'un formulaire
+
+
+### ✨ Aperçu visuel
+
+![App Screenshot](./exo4/captures/screenshot.png)
+
 ## ⚙️ Installation & exécution
 
 ### 1️⃣ Cloner le projet
@@ -121,5 +137,6 @@ npm run dev
 ---
 
 Veux-tu que j’ajoute aussi une **section "Aperçu visuel"** avec une capture d’écran pour l’exercice 4 (même format que pour l’exo 3) ?
+
 
 
