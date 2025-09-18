@@ -1,0 +1,22 @@
+.container {
+    min-height: 100vh;
+    background-color: hsl(210 20% 8%);
+}
+
+.content {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
