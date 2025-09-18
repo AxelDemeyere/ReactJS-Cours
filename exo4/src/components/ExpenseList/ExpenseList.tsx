@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeExpense } from '../../store/expenseSlice.ts';
 import type { RootState, AppDispatch } from '../../store/store.ts';
 import type { Expense } from '../../types/expense.ts';
-import Button from '../Button/Button.tsx';
+import Button from '../UI/Button/Button.tsx';
 
 export const ExpenseList = () => {
     const expenses = useSelector((state: RootState) => state.expenses.expenses);

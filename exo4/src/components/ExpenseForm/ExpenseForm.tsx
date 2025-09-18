@@ -3,7 +3,9 @@ import styles from './ExpenseForm.module.css';
 import { useDispatch } from 'react-redux';
 import { addExpense } from '../../store/expenseSlice.ts';
 import type { AppDispatch } from '../../store/store.ts';
-import Button from '../Button/Button.tsx';
+import Button from '../UI/Button/Button.tsx';
+import Input from "../UI/Input/Input.tsx";
+import Select from "../UI/Select/Select.tsx";
 
 
 export const ExpenseForm = () => {
@@ -39,62 +41,19 @@ export const ExpenseForm = () => {
     return (
         <div className={styles.card}>
             <form onSubmit={handleSubmit} className={styles.form}>
-                <div className={styles.fieldGroup}>
-                    <label htmlFor="libelle" className={styles.label}>Libellé</label>
-                    <input
-                        id="libelle"
-                        className={styles.input}
-                        placeholder="Ex: Courses"
-                        value={libelle}
-                        onChange={(e) => setLibelle(e.target.value)}
-                    />
-                </div>
-
-                <div className={styles.fieldGroup}>
-                    <label htmlFor="montant" className={styles.label}>Montant (€)</label>
-                    <input
-                        id="montant"
-                        type="number"
-                        step="0.01"
-                        className={styles.input}
-                        placeholder="Ex: 12.50"
-                        value={montant}
-                        onChange={(e) => setMontant(e.target.value)}
-                    />
-                </div>
-
-                <div className={styles.fieldGroup}>
-                    <label htmlFor="categorie" className={styles.label}>Catégorie</label>
-                    <select
-                        id="categorie"
-                        className={styles.select}
-                        value={categorie}
-                        onChange={(e) => setCategorie(e.target.value)}
-                    >
-                        <option value="alimentation">Alimentation</option>
-                        <option value="transport">Transport</option>
-                        <option value="loyer">Loyer</option>
-                        <option value="loisirs">Loisirs</option>
-                        <option value="autre">Autre</option>
-                    </select>
-                </div>
-
-                <div className={styles.fieldGroup}>
-                    <label htmlFor="date" className={styles.label}>Date</label>
-                    <input
-                        id="date"
-                        type="date"
-                        className={styles.input}
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
-                    />
-                </div>
-
-                <div className={styles.buttonContainer}>
+                    <Input placeholder={'Ex: Course'} type={'text'} id={libelle} label={"Libellé"} value={libelle} onChange={(e) => setLibelle(e.target.value)} />
+                    <Input placeholder={"Ex: 12.50"} type={"number"} id={montant} label={"Montant (€)"} value={montant} onChange={(e) => setMontant(e.target.value)} />
+                    <Select id={categorie} label={'Catégorie'} value={categorie} onChange={(e) => setCategorie(e.target.value)} options={[
+                        { value: 'alimentation', label: 'Alimentation' },
+                        { value: 'transport', label: 'Transport' },
+                        { value: 'loyer', label: 'Loyer' },
+                        { value: 'loisirs', label: 'Loisirs' },
+                        { value: 'autre', label: 'Autre' }
+                    ]} />
+                    <Input id={date} type={'date'} label={'Date'} value={date} onChange={(e) => setDate(e.target.value)} />
                     <Button variant="primary">
                         Ajouter
                     </Button>
-                </div>
             </form>
         </div>
     );
