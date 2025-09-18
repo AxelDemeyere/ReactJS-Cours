@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    background: linear-gradient(135deg, hsl(210 20% 12%), hsl(210 20% 14%));
+    border: 1px solid hsl(210 20% 20%);
+    border-radius: 0.75rem;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSection {
+    flex: 1;
+}
+
+.expenseInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.expenseTitle {
+    font-weight: 600;
+    color: hsl(210 20% 95%);
+}
+
+.categoryBadge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    background-color: hsl(210 20% 16%);
+    color: hsl(210 10% 60%);
+    border-radius: 0.25rem;
+}
+
+.expenseDate {
+    font-size: 0.875rem;
+    color: hsl(210 10% 60%);
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.expenseAmount {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: hsl(210 20% 95%);
+}
+
+.deleteButton {
+    padding: 0.375rem 0.75rem;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s;
+}
+
+.deleteButton:hover {
+    opacity: 0.9;
+}
+
+.emptyState {
+    padding: 2rem;
+    background: linear-gradient(135deg, hsl(210 20% 12%), hsl(210 20% 14%));
+    border: 1px solid hsl(210 20% 20%);
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.emptyStateText {
+    color: hsl(210 10% 60%);
+}
