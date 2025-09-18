@@ -23,13 +23,15 @@ function Button({
     const buttonClasses = `${styles.button} ${styles[variant]} ${className}`;
 
     return (
-        <button
-            type='submit'
-            className={buttonClasses}
-            onClick={onClick}
-        >
-            {children}
-        </button>
+        <div className={styles.buttonContainer}>
+            <button
+                type='submit'
+                className={buttonClasses}
+                onClick={onClick}
+            >
+                {children}
+            </button>
+        </div>
     );
 }
 
