@@ -46,9 +46,6 @@ src/
 │   ├── Input/               # Champs de saisie standard + titre
 │   └── Textarea/            # Zone de texte avec mode flexible
 │
-├── hooks/                   # Hooks personnalisés
-│   └── useAuth.ts           # Hook pour consommer AuthContext
-│
 ├── pages/                   # Pages de l'application
 │   ├── LoginPage/           # Connexion (publique)
 │   ├── RegisterPage/        # Inscription (publique)
@@ -172,65 +169,12 @@ Authorization: Bearer <token>
 - **localStorage** : Persistance du token entre les sessions
 - **useState local** : État des formulaires et données temporaires
 
-## 🎨 Système de Design
-
-### Variables CSS Globales
-```css
-:root {
-  /* Couleurs principales */
-  --color-primary: #0ea5e9;      /* Bleu moderne */
-  --color-secondary: #8b5cf6;    /* Violet */
-  --color-danger: #ef4444;       /* Rouge */
-  
-  /* Backgrounds glassmorphism */
-  --bg-glass: rgba(255, 255, 255, 0.05);
-  --bg-glass-hover: rgba(255, 255, 255, 0.1);
-  
-  /* Effets */
-  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3), 
-                  inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-```
-
-### Composants Stylisés
-- **Effet glassmorphism** : `backdrop-filter: blur(20px)` + backgrounds semi-transparents
-- **Animations fluides** : `transition: all 0.3s ease` sur les interactions
-- **Micro-interactions** : hover effects, scale transforms, box-shadows colorées
-- **Grille bento** : cartes de hauteurs variables pour un rendu organique
-
 ## 🔧 Configuration
 
 ### Variables d'Environnement (optionnelles)
 ```env
 VITE_API_BASE_URL=http://localhost:8080  # URL du backend (défaut: "")
 ```
-
-### Proxy de Développement
-Le serveur Vite inclut un proxy automatique :
-```
-/api/* → http://localhost:8080/api/*
-```
-Cela évite les problèmes de CORS en développement.
-
-## 🛠️ Développement
-
-### Ajout d'une Nouvelle Page
-1. Créer le composant dans `src/pages/NouvellePage/`
-2. Créer le fichier CSS module `NouvellePage.module.css`
-3. Ajouter la route dans `src/main.tsx`
-4. Utiliser les composants réutilisables (Button, Input, Form, etc.)
-
-### Ajout d'un Nouveau Composant
-1. Créer le dossier `src/components/NouveauComposant/`
-2. Créer `NouveauComposant.tsx` avec les types TypeScript
-3. Créer `NouveauComposant.module.css` avec les styles
-4. Exporter le composant et l'importer où nécessaire
-
-### Conventions de Code
-- **CSS Modules** pour l'encapsulation des styles
-- **TypeScript strict** avec interfaces explicites
-- **Props extensibles** pour la réutilisabilité
-- **Nommage cohérent** : PascalCase pour les composants, camelCase pour les props
 
 ## 📱 Utilisation
 
@@ -241,24 +185,3 @@ Cela évite les problèmes de CORS en développement.
 5. **Gérer les notes** : Éditer ou supprimer depuis la liste des notes
 6. **Déconnexion** : Utiliser le bouton "Déconnexion" dans le header
 
-## 🎯 Points Techniques
-
-### Authentification Automatique
-- Le token est vérifié au chargement de l'application
-- Redirection automatique si token expiré/invalide
-- Nettoyage automatique des tokens corrompus (evite "undefined" dans localStorage)
-
-### Optimisations
-- **CSS optimisé** : Variables CSS pour la cohérence
-- **Bundle splitting** : Séparation automatique par Vite
-- **TypeScript strict** : Détection d'erreurs à la compilation
-- **Composants réutilisables** : Réduction de la duplication de code
-
-### Responsive Design
-- Interface adaptée aux écrans desktop
-- Grille CSS flexible pour les cartes de notes
-- Pas d'optimisation mobile (comme spécifié)
-
----
-
-**Développé avec ❤️ en React + TypeScript**
